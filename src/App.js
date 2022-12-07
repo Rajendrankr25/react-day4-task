@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+import { OverviewChart } from './OverviewChart';
+import { StatusCardsList } from './StatusCards';
 
 
 //admin dashboard - day4 task
@@ -8,7 +9,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Dashboard</h1>
+      <h1 className='title'>Dashboard</h1>
+      <StatusCardsList />
+      <OverviewChart />
     </div>
   );
 }

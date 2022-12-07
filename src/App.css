@@ -1,0 +1,74 @@
+:root {
+  --cardBlue: hsl(225deg 69% 59%);
+  --cardGreen: hsl(158deg 75% 45%);
+  --cardSkyBlue: hsl(188deg 60% 51%);
+  --cardYellow: hsl(43deg 91% 60%);
+  --cardValueClr: hsl(232deg 8% 38%);
+  --cardIconClr: hsl(231deg 26% 89%);
+  --cardHeadBgClr: hsl(225deg 40% 98%);
+}
+
+body {
+  background-color: hsl(225deg 11% 93%);
+}
+
+.title {
+  color: hsl(232deg 8% 38%);
+  font-weight: 400;
+}
+
+.App {
+  font-family: Roboto;
+  margin: 10px;
+}
+
+.status-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 500px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .card-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card-value {
+  color: var(--cardValueClr);
+  margin: 5px 0px 0px 0px;
+  font-weight: 500;
+}
+
+.card-icon {
+  color: var(--cardIconClr);
+  font-size: 30px;
+  margin: 0;
+}
+
+.overview-chart {
+  margin-top: 24px;
+  padding-bottom: 15px;
+  background-color: white;
+}
+
+.overview-head {
+  color: var(--cardBlue);
+  background-color: var(--cardHeadBgClr);
+  margin: 0;
+  padding: 0.5px 20px;
+  font-weight: 500;
+}
