@@ -1,4 +1,5 @@
 import './App.css';
+import { ColoredCardsList } from './ColoredCards';
 import { OverviewChart } from './OverviewChart';
 import { ProjectsList } from './Projects';
 import { StatusCardsList } from './StatusCards';
@@ -14,6 +15,7 @@ function App() {
       <StatusCardsList />
       <OverviewChart />
       <ProjectsList />
+      <ColoredCardsList />
     </div>
   );
 }

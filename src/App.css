@@ -91,3 +91,21 @@ body {
   margin-top: 24px;
   padding-bottom: 1.25rem;
 }
+
+.colorCard {
+  padding: 0rem 1.25rem 0rem 1.25rem;
+}
+
+.clrCardsValue {
+  font-size: small;
+  font-weight: 500;
+  color: hsl(233deg 8% 78%);
+  margin-top: 0;
+}
+
+.colorCardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
