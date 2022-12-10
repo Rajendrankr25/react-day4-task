@@ -6,6 +6,7 @@
   --cardValueClr: hsl(232deg 8% 38%);
   --cardIconClr: hsl(231deg 26% 89%);
   --cardHeadBgClr: hsl(225deg 40% 98%);
+  --projectRed: hsl(5deg 78% 57%);
 }
 
 body {
@@ -65,10 +66,28 @@ body {
   background-color: white;
 }
 
-.overview-head {
+.overview-head,
+.project-head {
   color: var(--cardBlue);
   background-color: var(--cardHeadBgClr);
   margin: 0;
   padding: 0.5px 20px;
   font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.project-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: small;
+  font-weight: 500;
+  color: hsl(233deg 7% 55%);
+  padding: 0rem 1.25rem 0rem 1.25rem;
+}
+
+.projects-list {
+  background-color: white;
+  margin-top: 24px;
+  padding-bottom: 1.25rem;
 }

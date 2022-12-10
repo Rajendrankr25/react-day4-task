@@ -1,5 +1,6 @@
 import './App.css';
 import { OverviewChart } from './OverviewChart';
+import { ProjectsList } from './Projects';
 import { StatusCardsList } from './StatusCards';
 
 
@@ -12,6 +13,7 @@ function App() {
       <h1 className='title'>Dashboard</h1>
       <StatusCardsList />
       <OverviewChart />
+      <ProjectsList />
     </div>
   );
 }
