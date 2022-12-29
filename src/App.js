@@ -2,7 +2,10 @@ import './App.css';
 import { ColoredCardsList } from './ColoredCards';
 import { OverviewChart } from './OverviewChart';
 import { ProjectsList } from './Projects';
+import { MenuBar } from './MenuBar';
 import { StatusCardsList } from './StatusCards';
+import { Illustrations } from './Illustrations';
+import { DevelopmentApproach } from './DevelopmentApproach';
 
 
 //admin dashboard - day4 task
@@ -11,11 +14,17 @@ import { StatusCardsList } from './StatusCards';
 function App() {
   return (
     <div className="App">
-      <h1 className='title'>Dashboard</h1>
-      <StatusCardsList />
-      <OverviewChart />
-      <ProjectsList />
-      <ColoredCardsList />
+      <div>
+        <MenuBar />
+      </div>
+      <div>
+        <StatusCardsList />
+        <OverviewChart />
+        <ProjectsList />
+        <Illustrations />
+        <DevelopmentApproach />
+        <ColoredCardsList />
+      </div>
     </div>
   );
 }
