@@ -1,11 +1,10 @@
-import { AppBar } from "@mui/material";
+import SpeedIcon from '@mui/icons-material/Speed';
 
 export function MenuBar() {
     return (
-        <div>
-            <AppBar className="menu-bar">
-                <h3>Dash</h3>
-            </AppBar>
+        <div className="sidebar">
+            <h2>Admin</h2>
+            <h4><p><SpeedIcon /></p>Dashboard</h4>
         </div>
     )
 }

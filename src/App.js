@@ -6,6 +6,9 @@ import { MenuBar } from './MenuBar';
 import { StatusCardsList } from './StatusCards';
 import { Illustrations } from './Illustrations';
 import { DevelopmentApproach } from './DevelopmentApproach';
+import { SearchBar } from './SearchBar';
+import { Title } from './Title';
+import { Copyright } from './Copyright';
 
 
 //admin dashboard - day4 task
@@ -14,16 +17,25 @@ import { DevelopmentApproach } from './DevelopmentApproach';
 function App() {
   return (
     <div className="App">
-      <div>
+      <div className='main1'>
         <MenuBar />
       </div>
-      <div>
+      <div className='main2'>
+        <SearchBar />
+      </div>
+      <div className='main3'>
+        <Title />
         <StatusCardsList />
         <OverviewChart />
-        <ProjectsList />
-        <Illustrations />
-        <DevelopmentApproach />
-        <ColoredCardsList />
+        <div className='main4'>
+          <ProjectsList />
+          <Illustrations />
+        </div>
+        <div className='main5'>
+          <ColoredCardsList />
+          <DevelopmentApproach />
+        </div>
+        <Copyright />
       </div>
     </div>
   );
