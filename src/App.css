@@ -24,7 +24,6 @@ body {
   width: 10%;
   height: 100%;
   margin: 0px;
-  position: fixed;
 }
 
 .search-bar {
@@ -34,15 +33,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.main2 {
-  margin-left: 10%;
-}
-
-.main3 {
-  margin-left: 11%;
-  position: relative;
 }
 
 .main4,
@@ -84,17 +74,50 @@ body {
   gap: 24px;
 }
 
-/* @media (min-width: 500px) {
-  .App {
+@media(min-width:0px) {
+  .card-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main4,
+  .main5 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 500px) {
+
+  .card-list,
+  .main4,
+  .main5 {
     grid-template-columns: repeat(2, 1fr);
   }
-} */
 
-/* @media (min-width: 1100px) {
+  .colorCardList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main1 {
+    position: fixed;
+  }
+
+  .main2 {
+    margin-left: 10%;
+  }
+
+  .main3 {
+    margin-left: 11%;
+  }
+
+}
+
+@media (min-width: 1100px) {
   .card-list {
     grid-template-columns: repeat(4, 1fr);
   }
-} */
+}
+
+@media(min-width:400px) {}
 
 .card-value {
   color: var(--cardValueClr);
@@ -146,7 +169,7 @@ body {
 
 .illu-container>img {
   margin-left: 25%;
-  width: 25rem;
+  width: 50%;
 }
 
 .illu-container>p,
@@ -168,7 +191,7 @@ body {
 
 .colorCardList {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   gap: 24px;
   margin-top: 24px;
 }
